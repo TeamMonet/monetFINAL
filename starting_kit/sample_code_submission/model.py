@@ -100,3 +100,6 @@ class model (BaseEstimator):
                 self = pickle.load(f)
             print("Model reloaded from: " + modelfile)
         return self
+    
+    def main():
+        assert(len(predict(self, X)) == 18817,'this should pass')
