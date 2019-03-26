@@ -31,6 +31,10 @@ class model (BaseEstimator):
         self.num_feat=1
         self.num_labels=1
         self.is_trained=False
+        
+        '''
+        Nous testons ici plusieurs classifieurs afin de determiner le plus interessant parmis ceux la. Nous avons choisi le RandomForestClassifier, que nous combinons avec le Pipeline pour assembler les differentes etapes du projet (préprocessing, classifieur, validation. Nous constatons que notre score est plus faible avec le préprocessing
+        '''
         #self.model = clf = LogisticRegression(random_state=0, solver='lbfgs', multi_class='ovr')  
         #self.model = clf = GaussianNB()
         #self.model = clf = KNeighborsClassifier()
